@@ -1,0 +1,6 @@
+cat
+ねこ
+dog
+いぬ
+rabbit
+うさぎ
