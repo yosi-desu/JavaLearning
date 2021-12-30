@@ -1,5 +1,5 @@
 package OOP;
 
 public abstract class AbstractBody {
-  public abstract  String generate();
+  public abstract String generate();
 }

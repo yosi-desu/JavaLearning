@@ -11,20 +11,21 @@ public class TransWord {
       String a = args[0];
 
       String eword, jword = null;
-      while ((eword=in.readLine()) !=null){
-        if (a.equals(eword)){
+      while ((eword = in.readLine()) != null) {
+        if (a.equals(eword)) {
           jword = in.readLine();
           break;
         }
       }
-      if (jword == null)
-        System.out.println(a+"はありませんでした。");
-        else
+      if (jword == null) {
+        System.out.println(a + "はありませんでした。");
+      } else {
         System.out.println(jword);
-        in.close();
-    }catch (FileNotFoundException e){
+      }
+      in.close();
+    } catch (FileNotFoundException e) {
       System.out.println("ファイルがありません");
-    }catch (Exception e){
+    } catch (Exception e) {
       System.out.println("コマンド引数がありません");
     }
   }
